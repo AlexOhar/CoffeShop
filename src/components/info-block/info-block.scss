@@ -1,11 +1,15 @@
 .infoBlock {
     display: flex;
+    // flex-wrap: wrap;
     justify-content: center;
-    padding: 70px 32%;
+    align-items: center;
+    padding: 70px 27%;
     gap: 80px;
     &_img {
         position: relative;
         object-fit: cover;
+        width: 100%;
+        height: 100%;    
     }
     &_info {
         display: flex;
@@ -32,4 +36,13 @@
         }
     }
     
+}
+
+
+
+@media (max-width: 768px) {
+    .infoBlock {
+        flex-wrap: wrap;
+        gap: 30px 80px;
+    }
 }
